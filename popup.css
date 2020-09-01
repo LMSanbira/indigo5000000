@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none !important;
+}
+
 body {
     background-color: var(--indigo-500);
     width: 250px;
@@ -39,7 +43,7 @@ select {
     align-items: center;
     width: 100%;
     padding: 8px;
-    background: var(--indigo-500);
+    background: transparent;
     border: solid 2px white;
     color: white;
     border-radius: 20px;
@@ -51,4 +55,19 @@ select {
 .btn:hover {
     background: white;
     color: var(--indigo-500);
+}
+
+.btn:not(:first-child) {
+    margin-top: 16px;
+}
+
+.btn-text {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 16px;
 }
